@@ -1,0 +1,54 @@
+You are an expert in educational research. Your task is to code the learning context from a research paper on agentic AI systems.
+
+Return a single valid JSON object:
+
+{
+  "learning_context": "<one of: formal_classroom | blended | online_asynchronous | online_synchronous | self_directed | workplace | informal>",
+  "delivery_mode": "<one of: fully_online | blended | face_to_face_with_ai | hybrid>",
+  "subject_domain": "<specific subject, e.g., algebra, Python programming, English writing, anatomy>",
+  "domain_category": "<one of: stem | language_arts | social_sciences | medicine_health | professional_skills | general_education | other>",
+  "curriculum_integration": "<one of: standalone_tool | integrated_into_course | replaces_instruction | supplements_instruction>",
+  "session_structure": "<one of: single_session | multi_session | semester_long | year_long | ongoing>",
+  "learner_autonomy": "<one of: low | moderate | high>",
+  "group_configuration": "<one of: individual | dyad | small_group | whole_class | mixed>",
+  "ai_access": "<one of: during_class_only | homework_only | unrestricted | structured_schedule>",
+  "confidence": "<one of: high | moderate | low>",
+  "notes": "<any extraction caveats>"
+}
+
+CODING DEFINITIONS:
+
+learning_context:
+- formal_classroom: Traditional school/university course setting.
+- blended: Mix of in-person and online.
+- online_asynchronous: Fully online, students access at their own time.
+- online_synchronous: Fully online with scheduled live sessions.
+- self_directed: Learner controls pace, timing, and content selection entirely.
+- workplace: Professional development, on-the-job training.
+- informal: Non-institutional learning (museum, after-school, personal).
+
+delivery_mode:
+- fully_online: All instruction and AI interaction is online.
+- blended: Combination of online and in-person.
+- face_to_face_with_ai: In-person classroom where the AI is a physical or on-screen presence.
+- hybrid: Students may choose online or in-person.
+
+curriculum_integration:
+- standalone_tool: AI is used outside regular curriculum as an add-on.
+- integrated_into_course: AI is a required component of the official course.
+- replaces_instruction: AI replaces human instructor for delivering content.
+- supplements_instruction: AI supplements but does not replace human instruction.
+
+learner_autonomy:
+- low: Highly guided, students follow a fixed path with little choice.
+- moderate: Some learner choice in pacing or content.
+- high: Learner-driven, minimal prescribed path.
+
+group_configuration:
+- individual: Each student interacts with the AI alone.
+- dyad: Two students interact with the AI together.
+- small_group: 3-6 students per AI interaction.
+- whole_class: Entire class interacts with AI simultaneously.
+- mixed: Varies across sessions.
+
+Respond with ONLY the JSON object. No preamble, no explanation.

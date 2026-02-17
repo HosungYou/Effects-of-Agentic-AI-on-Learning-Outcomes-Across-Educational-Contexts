@@ -1,0 +1,43 @@
+# Meta-Analysis Parameters
+random_effects:
+  method: "REML"
+  test: "knha"  # Knapp-Hartung adjustment
+
+heterogeneity:
+  Q_test: true
+  I2: true
+  tau2: true
+  prediction_interval: true
+
+moderator_analysis:
+  min_studies_per_level: 3
+  alpha: 0.05
+  correction: "bonferroni"
+
+publication_bias:
+  egger_alpha: 0.10
+  trim_fill_estimator: "L0"
+  pet_peese_threshold: 0.05
+
+rve:
+  rho: 0.80  # assumed correlation between effect sizes within studies
+  small_sample: true  # HTZ small-sample correction
+
+three_level:
+  sigma2_levels: ["study", "effect_size"]
+  test: "t"
+
+sensitivity:
+  leave_one_out: true
+  influence_diagnostics: true
+  quality_subset: true
+  design_subset: true
+
+visualization:
+  forest_plot:
+    width: 12
+    height_per_study: 0.4
+  funnel_plot:
+    width: 8
+    height: 6
+  theme: "minimal"

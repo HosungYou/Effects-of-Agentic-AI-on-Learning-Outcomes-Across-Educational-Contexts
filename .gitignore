@@ -1,0 +1,84 @@
+# R
+.Rhistory
+.Rdata
+.RData
+.Rproj.user
+*.Rproj
+.Renviron
+.Rprofile
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Data files (too large for git)
+pdfs/*.pdf
+data/00_raw/search_results/*.csv
+data/00_raw/search_results/*.ris
+data/00_raw/search_results/*.bib
+
+# Large output files
+analysis/output/**/*.png
+analysis/output/**/*.pdf
+analysis/output/**/*.svg
+figures/output/*.png
+figures/output/*.pdf
+figures/output/*.svg
+
+# Sensitive / API keys
+.env
+*.env
+secrets/
+api_keys.yaml
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+!scripts/ai_coding_pipeline/*.log
+
+# Excel lock files
+~$*.xlsx
+~$*.xls
+~$*.docx
+
+# ChromaDB (RAG index)
+chroma_db/
+*.chromadb
+
+# R output
+*.Rout
+.RDataTmp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# OMC state
+.omc/

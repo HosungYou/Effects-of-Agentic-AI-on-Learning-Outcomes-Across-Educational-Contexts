@@ -67,27 +67,92 @@ The **Human-AI Learning Orchestration (HALO) Framework** integrates MCP (Model C
 ```
 .
 +-- README.md                          # This file
++-- MASTER_INTEGRATION_DOCUMENT.md     # Master integration linking all components
++-- CHANGELOG.md                       # Version history
++-- LICENSE                            # CC BY 4.0
++-- data/
+|   +-- 00_raw/                        # Raw search results, study metadata
+|   +-- 01_screened/                   # After title/abstract and full-text screening
+|   +-- 02_extracted/                  # AI-extracted data (effect sizes, characteristics)
+|   +-- 03_coded/                      # Human-verified coded data
+|   +-- 04_final/                      # Final validated dataset + provenance
+|   +-- templates/
+|       +-- Agentic_AI_Learning_MA_Coding_v1.xlsx  # Coding template (6 sheets)
++-- analysis/
+|   +-- R/                             # 9 analysis scripts (00-08)
+|   |   +-- 00_setup.R                 # Packages, config, utility functions
+|   |   +-- 01_data_preparation.R      # Data loading, cleaning, ES computation
+|   |   +-- 02_overall_effect.R        # RQ1: Random-effects model, forest plot
+|   |   +-- 03_moderator_analysis.R    # RQ2-4: Subgroup, meta-regression
+|   |   +-- 04_robust_variance.R       # RVE and 3-level meta-analysis
+|   |   +-- 05_publication_bias.R      # Funnel, Egger, trim-fill, PET-PEESE
+|   |   +-- 06_sensitivity.R           # Leave-one-out, influence, quality subset
+|   |   +-- 07_visualization.R         # All figures and plots
+|   |   +-- 08_halo_mapping.R          # RQ5: Meta-analysis -> HALO principles
+|   +-- Python/                        # Data cleaning, validation, reporting
+|   +-- output/                        # Analysis outputs (figures, tables)
 +-- docs/
+|   +-- 01_literature_search/          # Search strategy, database coverage
+|   +-- 02_study_selection/            # Inclusion/exclusion, screening protocol
+|   +-- 03_data_extraction/            # Coding manual (MD + DOCX), ES guide
+|   +-- 04_methodology/               # Meta-analysis method guide
+|   +-- 05_manuscript/                 # Writing timeline
+|   +-- 06_decisions/                  # Decision log
 |   +-- research-proposal.md           # Full research proposal
-|   +-- coding-scheme.md               # Meta-analysis coding scheme
-|   +-- search-strategy.md             # Search strategy & inclusion/exclusion criteria
-|   +-- halo-framework.md              # HALO Framework detailed description
-|   +-- pitch-for-collaborator.md      # 1-page pitch for Dr. Yang
-|   +-- timeline.md                    # Project timeline
-|   +-- references.md                  # Key references
+|   +-- coding-scheme.md              # Coding scheme overview
+|   +-- search-strategy.md            # Search strategy overview
+|   +-- halo-framework.md             # HALO Framework specification
+|   +-- pitch-for-collaborator.md     # 1-page pitch for Dr. Yang
+|   +-- timeline.md                   # Project timeline
+|   +-- references.md                 # Key references
++-- scripts/
+|   +-- ai_coding_pipeline/           # 7-phase AI extraction pipeline
+|   |   +-- run_pipeline.py           # Pipeline orchestrator
+|   |   +-- phase0-6 scripts          # Individual phase scripts
+|   |   +-- prompts/                  # AI prompt templates
+|   |   +-- utils/                    # Shared utilities
+|   +-- screening/                    # Study screening tools
+|   +-- data_processing/              # Template creation, PRISMA generation
+|   +-- figure_generation/            # Forest plots, funnel plots
++-- supplementary/
+|   +-- codebook/                     # Data dictionary
+|   +-- prisma/                       # PRISMA 2020 checklist
+|   +-- protocol/                     # Pre-registration protocol
+|   +-- risk_of_bias/                 # RoB assessment tool
++-- configs/                          # Pipeline and analysis configuration
++-- manuscript/                       # Current draft, versions, figures, tables
++-- figures/                          # Source and output figures
++-- pdfs/                             # Included study PDFs (git-ignored)
 ```
 
 ---
+
+## Analysis Suite (9 Modules)
+
+| # | Analysis | Script | Research Question |
+|---|----------|--------|-------------------|
+| 0 | Setup & Configuration | `00_setup.R` | Environment, packages, utilities |
+| 1 | Data Preparation | `01_data_preparation.R` | Load, clean, compute effect sizes |
+| 2 | Overall Effect Size | `02_overall_effect.R` | RQ1: Random-effects model, forest plot |
+| 3 | Moderator Analysis | `03_moderator_analysis.R` | RQ2-4: Subgroup, meta-regression |
+| 4 | Robust Variance Estimation | `04_robust_variance.R` | RVE + 3-level meta-analysis |
+| 5 | Publication Bias | `05_publication_bias.R` | Funnel, Egger, trim-fill, PET-PEESE |
+| 6 | Sensitivity Analysis | `06_sensitivity.R` | Leave-one-out, influence, quality |
+| 7 | Visualization | `07_visualization.R` | All figures, forest/funnel plots |
+| 8 | HALO Framework Mapping | `08_halo_mapping.R` | RQ5: Findings to design principles |
 
 ## Methodology
 
 - **Protocol**: PRISMA 2020
 - **Pre-registration**: PROSPERO or OSF
 - **Effect Size**: Hedges' g (standardized mean difference)
+- **Core Method**: Random-effects meta-analysis via `metafor` R package
+- **Dependent Effects**: Robust Variance Estimation (`robumeta`) + 3-level meta-analysis
 - **Databases**: Web of Science, Scopus, ERIC, PsycINFO, IEEE Xplore, ACM Digital Library
 - **Publication Period**: 2018-2025
 - **Expected Studies**: 40-80 studies, 100-200 effect sizes
 - **Software**: R (`metafor`, `robumeta`, `clubSandwich`)
+- **AI-assisted Coding**: 7-phase pipeline (Claude + GPT-4o + Groq consensus) with 20% human verification
 - **Intercoder Reliability**: Cohen's kappa (2 independent coders)
 
 ---

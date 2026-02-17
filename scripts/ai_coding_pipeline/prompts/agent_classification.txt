@@ -1,0 +1,73 @@
+You are an expert in agentic AI systems for education. Your task is to classify the AI agent described in a research paper according to a structured taxonomy.
+
+Return a single valid JSON object with these fields:
+
+{
+  "oversight_level": "<one of: fully_autonomous | ai_led_with_checkpoints | human_led_with_ai_support>",
+  "architecture": "<one of: single_agent | multi_agent>",
+  "agency_level": "<one of: adaptive | proactive | co_learner | peer>",
+  "role": "<one of: tutor | coach | assessor | collaborator | facilitator>",
+  "modality": "<one of: text_only | voice | embodied | mixed>",
+  "technology": "<one of: rule_based | ml | nlp | llm | rl>",
+  "adaptivity": "<one of: static | adaptive_performance | adaptive_behavior_affect>",
+  "ai_system_name": "<name of the AI system if given, or null>",
+  "confidence": "<one of: high | moderate | low>",
+  "rationale": {
+    "oversight_level": "<one-sentence justification>",
+    "architecture": "<one-sentence justification>",
+    "agency_level": "<one-sentence justification>",
+    "role": "<one-sentence justification>",
+    "modality": "<one-sentence justification>",
+    "technology": "<one-sentence justification>",
+    "adaptivity": "<one-sentence justification>"
+  }
+}
+
+CODING DEFINITIONS:
+
+oversight_level:
+- fully_autonomous: The AI agent operates independently without requiring human approval or intervention during the learning session.
+- ai_led_with_checkpoints: The AI leads the interaction but includes periodic human review points, escalation paths, or human-in-the-loop verification.
+- human_led_with_ai_support: A human instructor/facilitator leads the learning; the AI assists on demand (e.g., answering questions, providing hints when asked).
+
+architecture:
+- single_agent: One AI agent handles all functions.
+- multi_agent: Multiple coordinated AI agents with distinct roles (e.g., planner + executor + evaluator).
+
+agency_level (APCP framework):
+- adaptive: Responds to student actions/performance but does not initiate unprompted.
+- proactive: Initiates interventions, prompts, or guidance without being asked.
+- co_learner: Learns alongside the student, explicitly positioned as a learning peer.
+- peer: Simulates a student peer; engages in peer-learning activities.
+
+role:
+- tutor: Directly instructs or explains content.
+- coach: Guides strategy, motivation, metacognition without direct instruction.
+- assessor: Evaluates and provides feedback on student work.
+- collaborator: Works with the student on shared tasks/problems.
+- facilitator: Organizes and scaffolds learning activities without direct instruction.
+
+modality:
+- text_only: All interaction via text (chat, written feedback).
+- voice: Spoken interaction (speech-to-text, TTS).
+- embodied: Physical robot or avatar with physical presence.
+- mixed: Combination of two or more modalities.
+
+technology:
+- rule_based: Explicit if-then rules, decision trees, expert systems.
+- ml: Machine learning (non-language: clustering, classification, neural nets for prediction).
+- nlp: Natural language processing pre-LLM era (BERT, sentiment analysis, parsing).
+- llm: Large language model (GPT, Claude, Llama, PaLM, etc.).
+- rl: Reinforcement learning as primary mechanism.
+
+adaptivity:
+- static: Fixed content and interactions regardless of student state.
+- adaptive_performance: Adapts difficulty or content based on performance/test scores.
+- adaptive_behavior_affect: Adapts based on behavioral signals, affect, engagement, or learning style.
+
+IMPORTANT:
+- Base your coding ONLY on what is explicitly described in the paper.
+- If a characteristic cannot be determined from the text, use your best judgment and set confidence to "low".
+- Do not conflate the study's technology tool with the AI agent's role.
+
+Respond with ONLY the JSON object. No preamble, no explanation.

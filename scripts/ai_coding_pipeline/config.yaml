@@ -1,0 +1,74 @@
+project:
+  name: "Agentic AI Learning Outcomes Meta-Analysis"
+  version: "1.0"
+  description: "Standard meta-analysis of agentic AI effects on learning outcomes using Hedges' g"
+
+# Effect size constructs (not correlation constructs)
+effect_size_types:
+  primary: ["learning_outcome", "achievement", "performance", "knowledge_gain"]
+  secondary: ["engagement", "motivation", "self_efficacy", "satisfaction"]
+
+# AI agent characteristic codes
+agent_characteristics:
+  oversight_level: ["fully_autonomous", "ai_led_with_checkpoints", "human_led_with_ai_support"]
+  architecture: ["single_agent", "multi_agent"]
+  agency_level: ["adaptive", "proactive", "co_learner", "peer"]  # APCP framework
+  role: ["tutor", "coach", "assessor", "collaborator", "facilitator"]
+  modality: ["text_only", "voice", "embodied", "mixed"]
+  technology: ["rule_based", "ml", "nlp", "llm", "rl"]
+  adaptivity: ["static", "adaptive_performance", "adaptive_behavior_affect"]
+
+# Study design types
+study_designs:
+  experimental: ["randomized_controlled_trial", "quasi_experimental", "pre_post"]
+  valid_outcomes: ["learning_outcome", "achievement", "test_score", "knowledge", "skill"]
+
+models:
+  claude:
+    model: "claude-sonnet-4-5-20250929"
+    provider: "anthropic"
+    max_tokens: 4096
+    temperature: 0.0
+  gpt4o:
+    model: "gpt-4o"
+    provider: "openai"
+    max_tokens: 4096
+    temperature: 0.0
+  groq:
+    model: "llama-3.3-70b-versatile"
+    provider: "groq"
+    max_tokens: 4096
+    temperature: 0.0
+
+rag:
+  embedding_model: "all-MiniLM-L6-v2"
+  collection_name: "agentic_ai_learning_papers"
+  chunk_size: 1500
+  chunk_overlap: 200
+  persist_directory: "./chroma_db"
+
+quality_targets:
+  kappa_categorical: 0.85
+  icc_numerical: 0.95
+  human_sample_pct: 0.20
+  max_effect_size: 5.0  # |g| > 5.0 flagged for review
+  min_sample_size: 10   # n < 10 per group flagged
+
+effect_size_validation:
+  hedges_g_range: [-5.0, 5.0]
+  cohens_d_range: [-5.0, 5.0]
+  min_n_per_group: 10
+  require_control_group: true  # for between-subjects designs
+
+screening:
+  dimensions: ["population", "intervention", "outcome", "study_design", "effect_size_reporting", "language"]
+
+paths:
+  pdfs: "./pdfs"
+  raw_data: "./data/00_raw"
+  extracted: "./data/01_extracted"
+  verified: "./data/02_verified"
+  pooled: "./data/03_pooled"
+  final: "./data/04_final"
+  logs: "./scripts/ai_coding_pipeline/logs"
+  prompts: "./scripts/ai_coding_pipeline/prompts"

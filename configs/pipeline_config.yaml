@@ -1,0 +1,88 @@
+# Agentic AI Learning Outcomes Meta-Analysis Pipeline Configuration
+project:
+  name: "Effects of Agentic AI on Learning Outcomes"
+  version: "1.0.0"
+  effect_size: "hedges_g"
+
+search:
+  databases:
+    - web_of_science
+    - scopus
+    - eric
+    - psycinfo
+    - ieee_xplore
+    - acm_digital_library
+  date_range:
+    start: 2018
+    end: 2025
+  language: english
+
+inclusion_criteria:
+  design: ["experimental", "quasi_experimental", "pre_post"]
+  intervention: "ai_agent_with_autonomous_capability"
+  comparison: ["no_ai", "non_agentic_ai"]
+  outcomes: ["cognitive", "skill_based", "affective", "performance"]
+  contexts: ["k12", "higher_education", "workplace_training", "professional_education", "continuing_education"]
+  min_sample_per_group: 10
+
+coding:
+  human_oversight_levels:
+    - fully_autonomous
+    - ai_led_checkpoints
+    - human_led_ai_support
+  agent_architecture:
+    - single_agent
+    - multi_agent
+  agency_levels_apcp:
+    - adaptive
+    - proactive
+    - co_learner
+    - peer
+  agent_roles:
+    - tutor
+    - coach
+    - assessor
+    - collaborator
+    - facilitator
+
+analysis:
+  model: "random_effects"
+  method: "REML"
+  robust_variance: true
+  three_level: true
+  moderators:
+    categorical:
+      - human_oversight_level
+      - agent_architecture
+      - learning_context
+      - agent_role
+      - agency_level
+      - outcome_type
+      - outcome_level_blooms
+      - domain
+    continuous:
+      - publication_year
+      - sample_size
+  publication_bias:
+    - funnel_plot
+    - eggers_test
+    - trim_and_fill
+    - pet_peese
+    - selection_models
+
+ai_pipeline:
+  models:
+    primary: "claude-sonnet-4-5"
+    secondary: "gpt-4o"
+    tertiary: "groq-llama-3.3-70b"
+  icr_sample_pct: 20
+  consensus_threshold: 2  # 2 of 3 models must agree
+
+paths:
+  raw: "data/00_raw"
+  screened: "data/01_screened"
+  extracted: "data/02_extracted"
+  coded: "data/03_coded"
+  final: "data/04_final"
+  templates: "data/templates"
+  output: "analysis/output"
