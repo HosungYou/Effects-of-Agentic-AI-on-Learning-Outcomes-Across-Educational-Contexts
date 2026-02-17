@@ -54,6 +54,31 @@
 
 ---
 
+### Additional Theoretical References (cited in Section 2)
+
+- Suppes, P. (1966). The uses of computers in education. *Scientific American*, 215(3), 206-220.
+  - **Relevance**: Historical origin of computer-assisted instruction. Cited for evolutionary trajectory of educational AI.
+
+- Woolf, B. P. (2009). *Building intelligent interactive tutors: Student-centered strategies for revolutionizing e-learning*. Morgan Kaufmann.
+  - **Relevance**: Comprehensive ITS reference. Cited alongside VanLehn (2011) for ITS generation context.
+
+- Russell, S. J., & Norvig, P. (2021). *Artificial intelligence: A modern approach* (4th ed.). Pearson.
+  - **Relevance**: Standard AI textbook; defines "agentic" AI characteristics (autonomous, goal-directed behavior).
+
+- Endsley, M. R. (2017). From here to autonomy: Lessons learned from human-automation research. *Human Factors*, 59(1), 5-27.
+  - **Relevance**: Application of automation levels in aviation. Cross-domain precedent for Parasuraman et al. (2000) framework.
+
+- Lipsey, M. W., & Wilson, D. B. (2001). *Practical meta-analysis*. SAGE.
+  - **Relevance**: Methodological precedent for collapsing continuous moderator dimensions in meta-analysis.
+
+- Deng, X., & Yu, Z. (2023). A meta-analysis and systematic review of the effect of chatbot technology use in sustainable education. *Sustainability*, 15(4), 2940.
+  - **Relevance**: AI chatbot systematic review. Cited for mixed findings on cognitive outcomes post-LLM.
+
+- VanLehn, K. (2011). The relative effectiveness of human tutoring, intelligent tutoring systems, and other tutoring systems. *Educational Psychologist*, 46(4), 197-221. https://doi.org/10.1080/00461520.2011.611369
+  - **Relevance**: Landmark comparison of ITS vs. human tutoring. Step-based ITS approached human tutor effectiveness (d = 0.76).
+
+---
+
 ## Related Meta-Analyses (2020-2025)
 
 ### AI in Education Meta-Analyses
@@ -62,7 +87,7 @@
   - **Relevance**: AI impact on interaction patterns. Potential comparison point.
 
 - Zheng, L., Niu, J., Zhong, L., & Gyasi, J. F. (2021). The effectiveness of artificial intelligence on learning achievement and learning perception: A meta-analysis. *Interactive Learning Environments*, 31(9), 5650-5664.
-  - **Relevance**: Broad AI in education meta-analysis. Comparison for overall effect size.
+  - **Relevance**: Broad AI in education meta-analysis. Comparison for overall effect size. Cited in Section 2.2.
 
 - Ran, H., Kasli, M., & Secada, W. G. (2022). A meta-analysis on computer technology intervention effects on mathematics achievement for low-performing students in K-12 classrooms. *Journal of Educational Computing Research*, 59(1), 119-153.
   - **Relevance**: Technology intervention in K-12. Context-specific comparison.

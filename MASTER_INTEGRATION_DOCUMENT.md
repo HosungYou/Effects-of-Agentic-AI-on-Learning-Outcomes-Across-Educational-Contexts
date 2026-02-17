@@ -197,6 +197,8 @@ Quality gates must be verified before proceeding to the next analysis phase. Fai
 | D-05 | 2026-02-16 | Code oversight level as the primary moderator (RQ2) | Human oversight is the theoretically and practically most critical design dimension for safe AI deployment in education | Learning context (retained as RQ4); agent architecture (retained as RQ3) |
 | D-06 | 2026-02-16 | This is a standard meta-analysis (not MASEM) | Research questions concern moderating variables and effect sizes, not structural paths between latent constructs | MASEM (rejected: not testing a structural model; construct covariance matrix not estimable from available literature) |
 | D-07 | 2026-02-17 | Ground oversight_level taxonomy in Parasuraman et al. (2000) automation levels | Established 10-level automation taxonomy provides theoretical validity for post-hoc coding of human oversight in primary studies; 3-level collapse ensures meta-analytic tractability (k ≥ 4 per cell target) | Novel construct without established grounding (rejected: weakens reviewer acceptance); 10-level coding (rejected: insufficient studies per level) |
+| D-08 | 2026-02-17 | Integrate Literature Review and Theoretical Framework into a single Section 2 | C&E standard practice; avoids redundancy between lit review and theory sections; combined budget ~3,000 words accommodates both evidence gaps and theoretical grounding | Separate sections (rejected: overlapping content; wastes word budget) |
+| D-09 | 2026-02-17 | Formally cite Yang (2025) DLS model in theoretical background | Co-author's core contribution; DLS provides theoretical basis for adaptivity coding and APCP mechanism; formal citation appropriate in theory section even though abstract uses indirect integration | Indirect-only (rejected: undersells co-author contribution in theory section) |
 
 ---
 
@@ -267,11 +269,12 @@ Quality gates must be verified before proceeding to the next analysis phase. Fai
 | `risk_of_bias/Risk_of_Bias_Assessment.md` | RoB assessment tool (Cochrane adapted) | Complete |
 | `Search_Strategy_Appendix.md` | Verbatim search strings for all databases | Template ready |
 
-#### Manuscript (`manuscript/`)
+#### Manuscript (`manuscript/current/`)
 
 | Document | Purpose | Status |
 |----------|---------|:------:|
-| `abstract.md` | Structured abstract template | Template ready |
+| `abstract.md` | Structured abstract (C&E format) | Complete |
+| `02_literature_review_theoretical_framework.md` | Integrated lit review + theory (Section 2) | Draft v0.1 |
 
 #### Root Directory
 
