@@ -50,7 +50,7 @@ This direct mapping ensures that the framework is grounded in empirical evidence
 
 ### 3.2 Three Core Gaps
 
-1. **No meta-analysis has examined human oversight level as a moderator** -- The question "Is AI more effective when it acts autonomously vs. when humans intervene?" lacks meta-analytic evidence.
+1. **No meta-analysis has applied established automation level frameworks (Parasuraman et al., 2000) to examine human oversight as a moderator of AI effectiveness in education** -- despite human oversight being a core requirement of emerging AI governance frameworks (EU AI Act, 2024).
 
 2. **No meta-analysis has compared single vs. multi-agent architectures** -- The empirical basis for MCP-based multi-agent orchestration is absent.
 
@@ -99,6 +99,16 @@ Yan classifies AI agency into four progressive levels: Adaptive, Proactive, Co-L
 **Role in meta-analysis**: Coding scheme for agent agency level variable.
 
 **HALO mapping**: Layer 1 agency level calibration.
+
+### 4.6 Automation Level Theory (Parasuraman et al., 2000)
+
+Parasuraman, Sheridan, and Wickens (2000) established a foundational taxonomy of 10 levels of human-automation interaction, ranging from full human control to full automation. This framework has been widely applied in aviation, healthcare, and autonomous vehicles (e.g., SAE driving automation levels), but has not been systematically applied to educational AI.
+
+**Role in meta-analysis**: Provides the theoretical grounding for the three-level human oversight coding taxonomy (RQ2). Our coding scheme collapses Parasuraman et al.'s 10 levels into three meta-analytically tractable categories: fully autonomous (automation levels 7-10), AI-led with checkpoints (levels 4-6), and human-led with AI support (levels 1-3).
+
+**HALO mapping**: Layer 3 oversight calibration principles.
+
+**Policy relevance**: The EU AI Act (2024, Article 14) mandates human oversight for high-risk AI systems, including those deployed in educational contexts. This regulatory development makes empirical evidence on optimal oversight levels both timely and practically critical.
 
 ---
 

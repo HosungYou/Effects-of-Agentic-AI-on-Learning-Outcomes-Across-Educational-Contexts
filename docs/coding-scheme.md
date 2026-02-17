@@ -40,6 +40,8 @@ This document details the coding scheme for the meta-analysis of Agentic AI effe
 
 This is the **primary novel moderator** of this meta-analysis.
 
+**Theoretical basis**: This three-level taxonomy is grounded in Parasuraman, Sheridan, and Wickens' (2000) foundational model of types and levels of human interaction with automation. Their 10-level framework is collapsed into three meta-analytically tractable categories to ensure coding reliability (target Cohen's kappa >= 0.80) and adequate cell sizes (k >= 4 per level). This approach aligns with Molenaar's (2022) conceptualization of hybrid human-AI regulation in education and responds to the EU AI Act (2024, Article 14), which mandates human oversight for high-risk AI systems in educational contexts.
+
 | Code | Level | Operational Definition | Examples |
 |------|-------|----------------------|----------|
 | 1 | **Fully Autonomous** | AI agent independently determines learning path, content, pacing, and feedback without human instructor involvement during the learning process | Fully autonomous ITS; AI tutor operating without instructor monitoring; self-directed AI learning companion |

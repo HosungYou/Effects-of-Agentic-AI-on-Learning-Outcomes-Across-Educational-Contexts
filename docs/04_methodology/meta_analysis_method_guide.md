@@ -477,6 +477,64 @@ for (r_assumed in c(0.50, 0.70, 0.90)) {
 
 Compare effect sizes before and after trim-and-fill correction. If substantial difference (>0.10 g units), investigate potential publication bias more thoroughly.
 
+### 7.6 Human Oversight Moderator Sensitivity
+
+Because human oversight level is a novel coded moderator not reported by primary study authors, additional sensitivity analyses are warranted:
+
+#### 7.6.1 Cell Size Assessment
+
+```r
+# Check cell sizes before running moderator analysis
+table(dat$oversight_level)
+# Proceed only if k >= 4 in each cell
+# If not, apply binary collapse (see 7.6.2)
+```
+
+#### 7.6.2 Binary Collapse (Autonomous vs. Human-Involved)
+
+If any oversight level has k < 4 studies, collapse to binary:
+
+```r
+# Binary: Autonomous (1) vs. Human-Involved (2+3)
+dat$oversight_binary <- ifelse(dat$oversight_level == 1, 0, 1)
+
+res_oversight_binary <- rma.mv(yi = hedges_g,
+                                V = var_g,
+                                mods = ~ oversight_binary,
+                                random = ~ 1 | study_id / es_id,
+                                data = dat,
+                                method = "REML")
+
+summary(res_oversight_binary)
+```
+
+#### 7.6.3 Exclude Default-Coded Studies
+
+Studies coded as Level 1 by default (absence of oversight description, not explicit statement of full autonomy) are excluded to test robustness:
+
+```r
+# Exclude default-coded studies (flagged in oversight_notes)
+dat_explicit <- dat[!grepl("default coded|insufficient information",
+                           dat$oversight_notes, ignore.case = TRUE), ]
+
+res_oversight_explicit <- rma.mv(yi = hedges_g,
+                                  V = var_g,
+                                  mods = ~ factor(oversight_level),
+                                  random = ~ 1 | study_id / es_id,
+                                  data = dat_explicit,
+                                  method = "REML")
+```
+
+#### 7.6.4 Confounding Assessment
+
+```r
+# Cross-tabulation: oversight × context
+table(dat$oversight_level, dat$context)
+
+# If confounded, report oversight moderator results with caveat
+# and test oversight within context subgroups if k allows
+```
+
 ---
 
 ## 8. Step 6: Additional Moderator Analyses

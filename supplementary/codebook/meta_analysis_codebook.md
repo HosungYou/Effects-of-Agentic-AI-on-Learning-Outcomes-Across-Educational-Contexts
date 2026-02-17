@@ -57,7 +57,7 @@ This codebook defines every variable in the meta-analysis dataset. Each variable
 
 | Variable Name | Data Type | Values | Definition | Example |
 |---------------|-----------|--------|------------|---------|
-| `oversight_level` | Integer | 1–3 | Human oversight: 1=Fully autonomous, 2=AI-led with checkpoints, 3=Human-led with AI support | 2 |
+| `oversight_level` | Integer | 1–3 | Human oversight level (Parasuraman et al., 2000): 1=Fully autonomous (automation levels 7-10), 2=AI-led with checkpoints (levels 4-6), 3=Human-led with AI support (levels 1-3) | 2 |
 | `oversight_notes` | String | Text | Evidence from paper supporting oversight_level code | "System emails instructor when learner fails 3 items" |
 | `architecture` | Integer | 1–2 | Agent architecture: 1=Single agent, 2=Multi-agent system | 1 |
 | `architecture_notes` | String | Text | Evidence from paper supporting architecture code | "Two distinct agents: tutor-bot and assess-bot" |

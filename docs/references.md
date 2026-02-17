@@ -30,6 +30,23 @@
 - Ryan, R. M., & Deci, E. L. (2017). *Self-determination theory: Basic psychological needs in motivation, development, and wellness*. Guilford Press.
   - **Relevance**: Comprehensive SDT reference. Extended theoretical base for understanding motivational impacts of AI agent interactions.
 
+### Human Oversight and Automation Theory
+
+- Parasuraman, R., Sheridan, T. B., & Wickens, C. D. (2000). A model for types and levels of human interaction with automation. *IEEE Transactions on Systems, Man, and Cybernetics-Part A: Systems and Humans*, 30(3), 286-297. https://doi.org/10.1109/3468.844354
+  - **Relevance**: Foundational 10-level automation taxonomy. Our 3-level oversight coding (Fully Autonomous, AI-Led with Checkpoints, Human-Led with AI Support) is derived from this established framework, collapsed into 3 levels for meta-analytic coding reliability.
+
+- European Parliament. (2024). Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act). *Official Journal of the European Union*.
+  - **Relevance**: Article 14 mandates human oversight for high-risk AI systems, including educational AI. Makes our research question timely and policy-relevant.
+
+- Shneiderman, B. (2022). *Human-centered AI*. Oxford University Press.
+  - **Relevance**: 2D framework (human control × computer automation). Supports the conceptualization of oversight as a spectrum.
+
+- Molenaar, I. (2022). The concept of hybrid human-AI regulation: Exemplifying how to support young learners' self-regulated learning. *Computers and Education: Artificial Intelligence*, 3, 100070.
+  - **Relevance**: Education-specific precedent for hybrid human-AI regulation in learning contexts.
+
+- Holstein, K., McLaren, B. M., & Aleven, V. (2019). The classroom as a dashboard: Co-designing wearable cognitive augmentation for K-12 teachers. *Proceedings of the 8th International Conference on Learning Analytics and Knowledge*, 79-88.
+  - **Relevance**: Teacher awareness tools for AI tutoring. Empirical precedent for human oversight in AI-assisted classrooms.
+
 ### Methodology
 
 - Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., ... & Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. *BMJ*, 372, n71. https://doi.org/10.1136/bmj.n71

@@ -209,6 +209,8 @@ Defines how AI agents interact with learners in real-time. This is the "intellig
 
 ### 6.1 Human Oversight Calibration
 
+The oversight calibration component of HALO draws on Parasuraman, Sheridan, and Wickens' (2000) foundational taxonomy of automation levels. While that framework identifies 10 levels of human-automation interaction, educational meta-analysis requires a more parsimonious classification to ensure adequate cell sizes and coding reliability. Following the precedent of Molenaar (2022), who conceptualized "hybrid human-AI regulation" in educational contexts, we collapse the automation spectrum into three meta-analytically tractable levels. This approach is further motivated by the EU AI Act (2024), which mandates human oversight for high-risk AI systems deployed in education.
+
 The central innovation of HALO, grounded in Diverga checkpoint principles:
 
 #### Checkpoint Types

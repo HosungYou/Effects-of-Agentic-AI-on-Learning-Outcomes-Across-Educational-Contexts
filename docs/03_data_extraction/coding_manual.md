@@ -104,6 +104,8 @@ This coding manual provides complete operational definitions, coding procedures,
 
 This is the most critical coding variable. Code based on WHO primarily makes pedagogical decisions during the learning session.
 
+**Theoretical grounding**: The three-level oversight taxonomy derives from Parasuraman, Sheridan, and Wickens' (2000) foundational 10-level model of human-automation interaction. Our three levels correspond to: Fully Autonomous = automation levels 7-10 (computer decides, may or may not inform human); AI-Led with Checkpoints = levels 4-6 (computer suggests/executes, human can intervene); Human-Led with AI Support = levels 1-3 (human decides with computer assistance). This collapse ensures coding reliability while preserving the theoretically meaningful distinction of "who makes the primary pedagogical decision."
+
 | Code | Level | Definition | Indicators |
 |------|-------|------------|-----------|
 | 1 | **Fully Autonomous** | AI independently determines learning path, content, pacing, and feedback without instructor involvement during learning | No instructor monitoring described; AI makes all decisions; "fully automated"; no human intervention loop |
@@ -436,6 +438,15 @@ Each effect size gets same study-level codes (B, C, D)
 Each effect size gets its own outcome codes (E1-E4)
 Each effect size gets its own statistical data (F)
 ```
+
+### I4. Sensitivity Analysis for Oversight Coding
+
+Given that oversight_level is a novel coded variable, the following sensitivity analyses are pre-planned:
+
+1. **Binary collapse**: If cell sizes are insufficient (k < 4 in any level), collapse to binary: Autonomous (Level 1) vs. Human-Involved (Levels 2+3).
+2. **Default-coded exclusion**: Run analysis excluding studies coded as Level 1 by default (i.e., studies that did not explicitly describe the oversight mechanism but were coded as autonomous due to absence of oversight description).
+3. **Reliability-weighted analysis**: If kappa for this variable differs substantially from other variables, report as both primary and exploratory analysis.
+4. **Confounding check**: Cross-tabulate oversight_level × context to assess whether oversight level is confounded with learning context (e.g., K-12 studies predominantly Level 2-3, workplace predominantly Level 1).
 
 ---
 

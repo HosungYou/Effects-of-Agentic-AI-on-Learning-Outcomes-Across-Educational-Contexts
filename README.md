@@ -162,7 +162,7 @@ The **Human-AI Learning Orchestration (HALO) Framework** integrates MCP (Model C
 | Dimension | Existing Meta-Analyses | This Study |
 |-----------|----------------------|------------|
 | **Focus** | AI tools in general or specific types | "Agentic AI" -- AI with autonomous action capabilities |
-| **Key Moderator** | AI type, subject, learner level | **Human oversight level** (first of its kind) |
+| **Key Moderator** | AI type, subject, learner level | **Human oversight level** — novel application of automation theory (Parasuraman et al., 2000) to educational AI, responsive to EU AI Act (2024) requirements |
 | **Context** | K-12 or higher education only | All educational contexts including workplace learning |
 | **Framework** | Report results only | Meta-analysis results directly mapped to HALO design principles |
 | **Theory** | Single learning theory | AAT + EST + SDT + DLS + APCP integration |

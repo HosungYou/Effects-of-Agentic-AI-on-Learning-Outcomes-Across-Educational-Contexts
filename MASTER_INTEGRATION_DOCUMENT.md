@@ -38,6 +38,7 @@ This is a **standard random-effects meta-analysis** synthesizing empirical evide
 | Self-Determination Theory | SDT | Autonomy, competence, and relatedness as mediators of AI agent effects |
 | Dynamic Learner State Model | DLS | Yang (2025) — learner state as dynamic multi-dimensional input to agent adaptation |
 | Adaptive/Proactive/Co-Learner/Peer Framework | APCP | Yan (2025) — taxonomy of AI agency levels in educational contexts |
+| Automation Level Theory | ALT | Parasuraman et al. (2000) — grounding for 3-level oversight taxonomy; EU AI Act (2024) policy relevance |
 
 ---
 
@@ -195,6 +196,7 @@ Quality gates must be verified before proceeding to the next analysis phase. Fai
 | D-04 | 2026-02-16 | Define search window as 2018–2025 | Agentic AI in education emerged primarily post-2018; earlier studies predate the concept of agent-like AI in learning | 2015–2025 (considered; 2015–2017 literature is AI-assistive, not agentic) |
 | D-05 | 2026-02-16 | Code oversight level as the primary moderator (RQ2) | Human oversight is the theoretically and practically most critical design dimension for safe AI deployment in education | Learning context (retained as RQ4); agent architecture (retained as RQ3) |
 | D-06 | 2026-02-16 | This is a standard meta-analysis (not MASEM) | Research questions concern moderating variables and effect sizes, not structural paths between latent constructs | MASEM (rejected: not testing a structural model; construct covariance matrix not estimable from available literature) |
+| D-07 | 2026-02-17 | Ground oversight_level taxonomy in Parasuraman et al. (2000) automation levels | Established 10-level automation taxonomy provides theoretical validity for post-hoc coding of human oversight in primary studies; 3-level collapse ensures meta-analytic tractability (k ≥ 4 per cell target) | Novel construct without established grounding (rejected: weakens reviewer acceptance); 10-level coding (rejected: insufficient studies per level) |
 
 ---
 
