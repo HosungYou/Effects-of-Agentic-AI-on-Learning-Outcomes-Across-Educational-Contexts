@@ -274,7 +274,11 @@ Quality gates must be verified before proceeding to the next analysis phase. Fai
 | Document | Purpose | Status |
 |----------|---------|:------:|
 | `abstract.md` | Structured abstract (C&E format) | Complete |
-| `02_literature_review_theoretical_framework.md` | Integrated lit review + theory (Section 2) | Draft v0.1 |
+| `01_introduction.md` | Introduction (Section 1, 689 words) | Draft v0.1 |
+| `02_literature_review_theoretical_framework.md` | Integrated lit review + theory (Section 2, 3,076 words) | Draft v0.1 |
+| `03_halo_framework_initial.md` | HALO Framework initial version (Section 3, 827 words) | Draft v0.1 |
+| `04_method.md` | Method — PRISMA-compliant (Section 4, 1,573 words) | Draft v0.1 |
+| `Sections_1-2_Introduction_and_Literature_Review.docx` | Word export of Sections 1-2 | v0.1 |
 
 #### Root Directory
 

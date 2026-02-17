@@ -38,10 +38,10 @@ This timeline links manuscript writing activities to the 7-month project timelin
 
 | Week | Writing Task | Deliverable |
 |------|-------------|-------------|
-| Week 18-19 | Draft Introduction (background context, research gap) | Introduction draft v0.1 |
+| Week 18-19 | ~~Draft Introduction~~ → **Completed early**: Introduction (689 words) | `01_introduction.md` v0.1 ✓ |
 | Week 20 | ~~Draft Theoretical Background~~ → **Completed early**: Integrated "Literature Review and Theoretical Framework" (Section 2; 3,076 words) | `02_literature_review_theoretical_framework.md` v0.1 ✓ |
-| Week 21 | Draft Method section (search, screening, coding, analysis) | Method draft v0.1 |
-| Week 22 | Draft initial HALO Framework section | HALO initial draft v0.1 |
+| Week 21 | ~~Draft Method section~~ → **Completed early**: Method PRISMA-compliant (1,573 words) | `04_method.md` v0.1 ✓ |
+| Week 22 | ~~Draft initial HALO Framework~~ → **Completed early**: HALO initial (827 words) | `03_halo_framework_initial.md` v0.1 ✓ |
 
 **Note**: These drafts are preliminary and will be revised after results are complete.
 
@@ -184,10 +184,10 @@ This timeline links manuscript writing activities to the 7-month project timelin
 | Title | - | ≤ 15 words |
 | Abstract | 250 | Structured; Background/Objective/Method/Results/Conclusions |
 | Keywords | - | 5-7 keywords |
-| Introduction | 900 | Gap, purpose, significance |
+| Introduction | 689 | Gap, purpose, significance. Draft v0.1 complete. |
 | Literature Review & Theoretical Framework | 3,076 | Integrated section: lit review (2.1-2.3) + theory (2.4) + RQs (2.5). Draft v0.1 complete. |
-| HALO Framework (Initial) | 800 | Pre-analysis version |
-| Method | 1,800 | PRISMA-compliant; all required elements |
+| HALO Framework (Initial) | 827 | Pre-analysis 3-layer architecture. Draft v0.1 complete. |
+| Method | 1,573 | PRISMA-compliant; PICOS, search, coding, analysis, RoB. Draft v0.1 complete. |
 | Results | 2,500 | RQ1-4 with tables and figures |
 | HALO Framework (Refined) | 1,000 | Evidence-mapped design principles |
 | Discussion | 2,200 | Implications, limitations, future directions |
@@ -229,7 +229,7 @@ Use tracked changes (Word) or pull request review (GitHub) for all revisions:
 
 | Version | Date | Author | Description |
 |---------|------|--------|-------------|
-| v0.1 | 2026-02-17 | Hosung You | Abstract (structured, C&E format) + Section 2 (Lit Review & Theory, 3,076 words) |
+| v0.1 | 2026-02-17 | Hosung You | Abstract + Sections 1-4 complete (Introduction 689w, Lit Review & Theory 3,076w, HALO Initial 827w, Method 1,573w = 6,165 total). Word export of Sections 1-2. |
 | v0.2 | [TBD] | Joint | First full draft |
 | v0.3 | [TBD] | Joint | Post-review revision Cycle 1 |
 | v0.4 | [TBD] | Joint | Post-review revision Cycle 2 |
