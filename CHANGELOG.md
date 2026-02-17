@@ -4,17 +4,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.4.0] - 2026-02-17
+
+### Added
+- **References section** (`05_references.md`) - 40 references in APA 7th edition format with DOIs, covering all citations across Sections 1-4.
+- **Full Word export** (`Manuscript_Sections_1-4_with_References.docx`) - APA-formatted (Times New Roman 12pt, double-spaced, hanging indent references), no author names, includes Abstract + Sections 1-4 + References.
+
+### Changed
+- Removed all em dashes (`--` and Unicode `—`) from all manuscript files (abstract, Sections 1-4), replaced with APA-compliant punctuation (commas, colons, parentheses).
+- Removed author names from Word document title page per blind review preparation.
+
 ## [0.3.0] - 2026-02-17
 
 ### Added
-- **Section 1: Introduction** (`01_introduction.md`) — 689 words. Problem statement, three gaps, purpose, contributions, paper structure.
-- **Section 3: HALO Framework Initial** (`03_halo_framework_initial.md`) — 827 words. Three-layer architecture (Foundation, Protocol, Orchestration) with falsifiability table.
-- **Section 4: Method** (`04_method.md`) — 1,573 words. PRISMA-compliant: PICOS criteria, search strategy (6 databases), dual screening, coding (4 domains, 6 AI agent moderators), Hedges' g computation, 3-level RE model + RVE, publication bias, sensitivity analyses, RoB.
-- **Word export** (`Sections_1-2_Introduction_and_Literature_Review.docx`) — APA-formatted, Times New Roman 12pt, double-spaced.
+- **Section 1: Introduction** (`01_introduction.md`) - 689 words. Problem statement, three gaps, purpose, contributions, paper structure.
+- **Section 3: HALO Framework Initial** (`03_halo_framework_initial.md`) - 827 words. Three-layer architecture (Foundation, Protocol, Orchestration) with falsifiability table.
+- **Section 4: Method** (`04_method.md`) - 1,573 words. PRISMA-compliant: PICOS criteria, search strategy (6 databases), dual screening, coding (4 domains, 6 AI agent moderators), Hedges' g computation, 3-level RE model + RVE, publication bias, sensitivity analyses, RoB.
+- **Word export** (`Sections_1-2_Introduction_and_Literature_Review.docx`) - APA-formatted, Times New Roman 12pt, double-spaced.
 
 ### Changed
-- Updated MASTER_INTEGRATION_DOCUMENT — full manuscript section inventory
-- Updated writing_timeline — Weeks 18-22 marked complete; word budget actuals
+- Updated MASTER_INTEGRATION_DOCUMENT - full manuscript section inventory
+- Updated writing_timeline - Weeks 18-22 marked complete; word budget actuals
 
 ## [0.2.0] - 2026-02-17
 
