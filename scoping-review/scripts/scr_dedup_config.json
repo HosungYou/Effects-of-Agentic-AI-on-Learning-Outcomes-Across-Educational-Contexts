@@ -1,0 +1,85 @@
+{
+  "project": "trust_calibration_scoping_review",
+  "title_similarity_threshold": 0.85,
+  "output_dir": "data/01_deduplicated",
+  "search_files": [
+    {
+      "filepath": "data/00_search_results/wos_trust_education_YYYYMMDD.csv",
+      "source_label": "Web_of_Science",
+      "column_map": {
+        "TI": "title",
+        "AB": "abstract",
+        "AU": "authors",
+        "PY": "year",
+        "DI": "doi",
+        "SO": "journal",
+        "VL": "volume",
+        "IS": "issue",
+        "BP": "pages"
+      }
+    },
+    {
+      "filepath": "data/00_search_results/scopus_trust_education_YYYYMMDD.csv",
+      "source_label": "Scopus",
+      "column_map": {
+        "Title": "title",
+        "Abstract": "abstract",
+        "Authors": "authors",
+        "Year": "year",
+        "DOI": "doi",
+        "Source title": "journal",
+        "Volume": "volume",
+        "Issue": "issue",
+        "Page start": "pages"
+      }
+    },
+    {
+      "filepath": "data/00_search_results/eric_trust_education_YYYYMMDD.csv",
+      "source_label": "ERIC",
+      "column_map": {
+        "Title": "title",
+        "Abstract": "abstract",
+        "Author": "authors",
+        "PublicationYear": "year",
+        "DOI": "doi",
+        "Journal": "journal"
+      }
+    },
+    {
+      "filepath": "data/00_search_results/psycinfo_trust_education_YYYYMMDD.csv",
+      "source_label": "PsycINFO",
+      "column_map": {
+        "Title": "title",
+        "Abstract": "abstract",
+        "Author": "authors",
+        "Year": "year",
+        "DOI": "doi",
+        "Source": "journal"
+      }
+    },
+    {
+      "filepath": "data/00_search_results/semantic_scholar_YYYYMMDD.csv",
+      "source_label": "Semantic_Scholar",
+      "column_map": {
+        "title": "title",
+        "abstract": "abstract",
+        "authors": "authors",
+        "year": "year",
+        "doi": "doi",
+        "journal": "journal"
+      }
+    },
+    {
+      "filepath": "data/00_search_results/openalex_YYYYMMDD.csv",
+      "source_label": "OpenAlex",
+      "column_map": {
+        "title": "title",
+        "abstract": "abstract",
+        "authors": "authors",
+        "year": "year",
+        "doi": "doi",
+        "journal": "journal"
+      }
+    }
+  ]
+}
